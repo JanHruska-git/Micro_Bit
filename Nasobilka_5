@@ -1,13 +1,13 @@
 basic.clear_screen()
-n = 5
+n = 0
 
 def on_forever():
     global n
-    basic.pause(1000)
+    basic.pause(100)
     basic.clear_screen()
     if n <= 45:
         n += 5
         basic.show_number(n)
     else:
-        n = 5
+        n = 0
 basic.forever(on_forever)
